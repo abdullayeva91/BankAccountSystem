@@ -13,9 +13,9 @@ public class BankOperations {
             account.deposit(200);
             account.withdraw(50);
             account.displayAccountInfo();
-            if (account.getAccountNumber() == ("SA123")) {
+            if (account.getAccountNumber().equals("SA123")) {
                 mySavings.performTransaction("interest", 0.0);
-            } else if (account.getAccountNumber() == ("CA456")) {
+            } else if (account.getAccountNumber().equals ("CA456")) {
                 System.out.println("Cari hesab Ücun faiz tətbiqi yoxdur.");
             }
 
